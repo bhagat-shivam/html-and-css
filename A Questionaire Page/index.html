@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title> A Questionaire Page or survey Page</title>
+       <link  rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <h1 id="title">My Survey form</h1>
+            <p id="description">Thank You for giving me your precious time to fill out this form</p>
+
+        <div class="main-content">
+            <div class="form-content">
+                <form id="survey-form">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" required placeholder="Enter your name" />
+
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="text" required placeholder="Enter your email" />
+
+                    <label for="number" id="number-label">Enter your rate from 1 to 10</label>
+                    <input id="number" type="text" required placeholder="Enter your rate" />
+
+                    <label for="dropdown"> which option is best for your current role?</label>
+                    <select id="dropdown">
+                        <option value="student">Student</option>
+                        <option value="full-time-learner">full-time-learner</option>
+                        <option value="full-time-job">full-time-job</option>
+                        <option value="prefer-not-to-say">prefer-not-to-say</option>
+                        <option value="others">others</option>
+                    </select><br><br>
+
+
+                    <fieldset>
+                        
+                        <legend>would you recommend this page to your friend?</legend>
+
+                        <input type="radio" name="recommend" checked id="yes" value="yes" />
+                        <label for="yes">Yes</label><br>
+
+                        <input type="radio" name="recommend" checked id="no" value="no" />
+                        <label for="no">No</label><br>
+
+                        <input type="radio" name="recommend" checked id="not-sure" value="not-sure" />
+                        <label for="not-sure">Not-Sure</label>
+
+                    </fieldset>
+
+                    <p> what would you like to improve?</p>
+                    
+                    <input type="checkbox" id="code-length" name="code-length" value="code-length" />
+                    <label for="code-length">code-length</label><br>
+
+                    <input type="checkbox" id="content" name="content" value="content" />
+                    <label for="content">content</label><br>
+
+                    <input type="checkbox" id="add-more" name="add-more" value="add-more" />
+                    <label for="add-more">add-more</label><br><br>
+
+                    <label for="comment"> Any comments?</label><br>
+                    <textarea rows="4" cols="50" id="comment">Enter your Comment......</textarea>
+
+                    <button type="submit" id="submit">Submit</button>
+
+
+                </form>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
